@@ -165,7 +165,6 @@ function typeWriter() {
     } else if (i >= txt.length) {
         i = 0;
         setTimeout(typeWriter, speed);
-        console.log('fim');
     }
 
 }
