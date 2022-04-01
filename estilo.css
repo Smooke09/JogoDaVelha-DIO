@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+  
+body {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  background: cadetblue;
+}
+
+.quadrado {
+  text-align: center;
+  width: 50px;
+  background: #fff;
+  display: inline-block;
+  padding: 40px;
+  font-size: 60px;
+  margin: 5px;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid black;
+  box-shadow: 1px 0px 3px 0px #0000009c;
+}
+
+.quadrado:hover {
+  background: #6aff6a;
+  color: #6aff6a;
+}
+
+
+.placar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 306px;
+  justify-items: stretch;
+}
+
+.placar > p {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+#jogadorX,
+#jogadorO {
+  text-align: center;
+  font-size: 60px;
+  margin: 5px;
+  cursor: pointer;
+  color: black;
+}
+
+.jogador,
+.vencedor {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  background: #eee;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: #ccc;
+}
+
+
+.verde {
+  background-color: #00ff00;
+}
+
+
+  .typewriter {
+    font-family: 'Anonymous Pro', monospace;
+    width: 70%;  
+    display: flex;
+    margin: 0 auto;
+  }
+  h1 {
+    overflow: hidden;
+    margin: 0 auto;
+    display: inline-block;
+    font-weight: normal;
+
+  }
+  h1:after{
+   content: '';
+    display: inline-block;
+    background-color: black;
+    margin-left: 2px;
+    height: 25px;
+    width: 4px;
+    animation: cursor 0.4s infinite;
+  }
+
+  @keyframes cursor {
+    0% { opacity: 1; }
+      49% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 0; }
+  }
